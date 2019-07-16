@@ -1,0 +1,10 @@
+说明：
+	DataAccessException
+		数据库处理如在Dao层有数据查询时把SQLException处理并抛出DataAccessException
+		该异常定义为unckecked异常(继承RuntimeException)，即可以不捕获不处理，不处理时为往上层抛，直到页面显示
+	BusinessException 
+		比如用户名为空，要检查的。最终反馈到页面上显示给用户，并适合给用户选择往下执行
+		即这种异常必须处理的(继承Exception)
+
+关于日志
+	异常日志应该在最初产生的位置记录！不必在每个catch都写日志！	

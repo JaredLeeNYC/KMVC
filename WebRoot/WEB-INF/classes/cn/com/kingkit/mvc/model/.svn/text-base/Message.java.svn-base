@@ -1,0 +1,64 @@
+package cn.com.kingkit.mvc.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Message implements Serializable {
+     private Long id;
+     private String author;//作者
+     private Date time;//时间
+     private String title;//标题
+     private String content;//内容
+     private String rcontent;//回复内容
+     private String pic;
+     private Long readable;
+   
+	public Long getReadable() {
+		return readable;
+	}
+	public void setReadable(Long readable) {
+		this.readable = readable;
+	}
+	public String getPic() {
+		return pic;
+	}
+	public void setPic(String pic) {
+		this.pic = pic;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public Date getTime() {
+		return time;
+	}
+	public void setTime(Date time) {
+		this.time = time;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public String getRcontent() {
+		return rcontent;
+	}
+	public void setRcontent(String rcontent) {
+		this.rcontent = rcontent;
+	}
+}

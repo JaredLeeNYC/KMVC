@@ -1,0 +1,28 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+
+import cn.com.kingkit.mvc.dao.BaseDao;
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.OfficialPicture;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class OfficialPictureService extends BaseService<OfficialPicture> implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2210991649693601884L;
+
+	public void save(OfficialPicture officialPicture) throws BusinessException{
+		if (null != officialPicture && null != officialPicture.getUrl()&&null!=officialPicture.getLink()) {
+			if(null != officialPicture.getId()){
+				update(officialPicture);
+			}else{
+				officialPicture.setSortNum(Long.valueOf(BaseDao.getMaxNum("sortNum", "OfficialPicture")+1));
+				add(officialPicture);
+			}
+		}else {
+			throw new BusinessException("图片不能为空,链接不能为空!");
+		}
+	}
+}

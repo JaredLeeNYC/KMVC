@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<!-- 配置官网图片新闻BEAN 开始 -->
+	<bean id="PictureNews" class="cn.com.kingkit.mvc.model.PictureNews">
+
+	</bean>
+	<!-- 配置官网图片新闻BEAN 结束 -->
+	<!-- 配置页面信息BEAN 开始 -->
+	<bean id="WebInfo" class="cn.com.kingkit.mvc.model.WebInfo">
+
+	</bean>
+	<!-- 配置页面信息 结束 -->
+	<!-- 配置页面信息service BEAN 开始 -->
+	<bean id="WebInfoService" class="cn.com.kingkit.mvc.service.impl.WebInfoService">
+
+	</bean>
+	<!-- 配置页面信息service BEAN 结束 -->
+	<!-- 配置菜单BEAN 开始 -->
+	<bean id="CommMenu" class="cn.com.kingkit.mvc.model.CommMenu">
+
+	</bean>
+	<!-- 配置菜单BEAN 结束 -->
+
+	<!-- 配置链接BEAN 开始 -->
+	<bean id="Link" class="cn.com.kingkit.mvc.model.Link">
+
+	</bean>
+	<!-- 配置链接BEAN 结束 -->
+
+	<!-- 配置用户BEAN 开始 -->
+	<bean id="CommUser" class="cn.com.kingkit.mvc.model.CommUser">
+
+	</bean>
+	<!-- 配置用户BEAN 结束 -->
+
+	<!-- 配置资源BEAN 开始 -->
+	<bean id="CommResource"
+		class="cn.com.kingkit.mvc.model.CommResource">
+
+	</bean>
+	<!-- 配置资源BEAN 结束 -->
+	<!-- 配置留言BEAN 开始 -->
+	<bean id="Message" class="cn.com.kingkit.mvc.model.Message"></bean>
+	<!-- 配置留言BEAN 结束 -->
+
+	<!-- 配置现任领导BEAN 开始 -->
+	<bean id="TeacherNews"
+		class="cn.com.kingkit.mvc.model.TeacherNews">
+
+	</bean>
+	<!-- 配置现任领导BEAN 结束 -->
+
+	<!-- 配置师资队伍BEAN 开始 -->
+	<bean id="Teachers" class="cn.com.kingkit.mvc.model.Teachers">
+
+	</bean>
+	<!-- 配置师资队伍BEAN 结束 -->
+	
+	<!-- 配置学工队伍BEAN 开始 -->
+	<bean id="Students" class="cn.com.kingkit.mvc.model.Students">
+
+	</bean>
+	<!-- 配置学工队伍BEAN 结束 -->
+	
+	<!-- 配置留言service BEAN 开始 -->
+	<bean id="MessageService"
+		class="cn.com.kingkit.mvc.service.impl.MessageService">
+
+	</bean>
+	<!-- 配置留言service BEAN 结束 -->
+	<!-- 配置现任领导service BEAN 开始 -->
+	<bean id="TeacherNewsService"
+		class="cn.com.kingkit.mvc.service.impl.TeacherNewsService">
+
+	</bean>
+
+	<!-- 配置现任领导service BEAN 结束 -->
+	<!-- 配置师资队伍service BEAN 开始 -->
+	<bean id="TeachersService"
+		class="cn.com.kingkit.mvc.service.impl.TeachersService">
+
+	</bean>
+	<!-- 配置师资队伍service BEAN 结束 -->
+	<!-- 配置学工队伍service BEAN 开始 -->
+	<bean id="StudentsService"
+		class="cn.com.kingkit.mvc.service.impl.StudentsService">
+
+	</bean>
+	<!-- 配置学工队伍service BEAN 结束 -->
+
+	<!-- 配置角色BEAN 开始 -->
+	<bean id="CommRole" class="cn.com.kingkit.mvc.model.CommRole">
+
+	</bean>
+	<!-- 配置角色BEAN 结束 -->
+
+	<!-- 配置分页控制BEAN 开始 -->
+	<bean id="PageController"
+		class="cn.com.kingkit.mvc.util.PageController">
+
+	</bean>
+	<!-- 配置分页控制BEAN 结束 -->
+
+	<!-- 配置新闻BEAN 开始 -->
+	<bean id="News" class="cn.com.kingkit.mvc.model.News">
+
+	</bean>
+	<!-- 配置新闻BEAN 结束 -->
+
+	<!-- 配置学生网文章BEAN 开始 -->
+	<bean id="StudentsArtical"
+		class="cn.com.kingkit.mvc.model.students.StudentsArtical">
+
+	</bean>
+	<!-- 配置学生网文章BEAN 结束 -->
+
+	<!-- 配置思政教育网文章BEAN 开始 -->
+	<bean id="PoliticalArtical"
+		class="cn.com.kingkit.mvc.model.political.PoliticalArtical">
+
+	</bean>
+	<!-- 配置思政教育网文章BEAN 结束 -->
+
+	<!--配置新闻service 开始  -->
+	<bean id="NewsService"
+		class="cn.com.kingkit.mvc.service.impl.NewsService">
+	</bean>
+	<!-- 配置新闻service 结束 -->
+
+	<!--配置新闻种类service 开始  -->
+	<bean id="NewsTypeService"
+		class="cn.com.kingkit.mvc.service.impl.NewsTypeService">
+	</bean>
+	<!--配置新闻种类service 结束  -->
+
+	<!-- 配置官网图片BEAN 开始 -->
+	<bean id="OfficialPicture"
+		class="cn.com.kingkit.mvc.model.OfficialPicture">
+
+	</bean>
+	<!-- 配置官网图片BEAN 结束 -->
+
+	<!-- 配置官网图片service 开始 -->
+	<bean id="OfficialPictureService"
+		class="cn.com.kingkit.mvc.service.impl.OfficialPictureService">
+
+	</bean>
+	<!-- 配置官网图片service 结束 -->
+
+	<!-- 配置链接service 开始 -->
+	<bean id="LinkService"
+		class="cn.com.kingkit.mvc.service.impl.LinkService">
+
+	</bean>
+	<!-- 配置链接service 结束 -->
+
+	<!-- 配置菜单service 开始 -->
+	<bean id="CommMenuService"
+		class="cn.com.kingkit.mvc.service.impl.CommMenuService">
+
+	</bean>
+	<!-- 配置菜单service 结束 -->
+
+	<!-- 配置官网图片新闻service 开始 -->
+	<bean id="PictureNewsService"
+		class="cn.com.kingkit.mvc.service.impl.PictureNewsService">
+
+	</bean>
+	<!-- 配置官网图片新闻service 结束 -->
+
+	<!-- 配置链接类型service 开始 -->
+	<bean id="LinkTypeService"
+		class="cn.com.kingkit.mvc.service.impl.LinkTypeService">
+
+	</bean>
+	<!-- 配置链接类型service 结束 -->
+
+	<!-- 配置用户service 开始 -->
+	<bean id="UserService"
+		class="cn.com.kingkit.mvc.service.impl.CommUserService">
+
+	</bean>
+	<!-- 配置用户service 结束 -->
+
+	<!-- 配置资源service 开始 -->
+	<bean id="ResourceService"
+		class="cn.com.kingkit.mvc.service.impl.CommResourceService">
+	</bean>
+	<!-- 配置资源service 结束 -->
+
+	<!-- 配置角色service BEAN 开始 -->
+	<bean id="RoleService"
+		class="cn.com.kingkit.mvc.service.impl.CommRoleService">
+	</bean>
+	<!-- 配置角色service BEAN 结束 -->
+
+	<!-- 配置学生网文章service BEAN 开始 -->
+	<bean id="StudentsArticalService"
+		class="cn.com.kingkit.mvc.service.impl.students.StudentsArticalService">
+	</bean>
+	<!-- 配置学生网文章service BEAN 结束 -->
+
+	<!-- 配置思政教育网文章service BEAN 开始 -->
+	<bean id="PoliticalArticalService"
+		class="cn.com.kingkit.mvc.service.impl.political.PoliticalArticalService">
+	</bean>
+	<!-- 配置思政教育网文章service BEAN 结束 -->
+
+
+	<!-- 配置登录,登出 开始 -->
+	<bean id="/adminLoginout.do"
+		class="cn.com.kingkit.mvc.action.comm.AdminLoginoutAction">
+		<property name="user">
+			<ref bean="CommUser" />
+		</property>
+		<property name="service">
+			<ref bean="UserService" />
+		</property>
+		<property name="loginUser" scope="session">
+			<ref bean="CommUser" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="success">
+					<value>/pages/main/Main.jsp[redirect]</value>
+				</entry>
+				<entry key="failure">
+					<value>/Login.jsp</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/main/InfoEdit.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/main/Main.jsp</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<!-- 配置登录,登出 结束 -->
+
+	<!-- 页面信息 开始 -->
+	<bean id="/pages/webInfo.do" class="cn.com.kingkit.mvc.action.comm.WebInfoAction">
+		<property name="webInfo">
+			<ref bean="WebInfo" />
+		</property>
+		<property name="service">
+			<ref bean="WebInfoService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="edit">
+					<value>/pages/comm/WebInfoEdit.jsp</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+			</map>
+		</property>
+
+	</bean>
+	<!-- 页面信息 结束 -->
+	<!-- 链接 开始 -->
+	<bean id="/pages/official/link/link.do"
+		class="cn.com.kingkit.mvc.action.official.LinkAction">
+		<property name="link">
+			<ref bean="Link" />
+		</property>
+		<property name="service">
+			<ref bean="LinkService" />
+		</property>
+		<property name="typeService">
+			<ref bean="LinkTypeService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/official/link/link.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/official/link/LinkEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/official/link/link.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/official/link/LinkList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 链接 结束 -->
+
+	<!-- 链接 开始 -->
+	<bean id="/pages/comm/menu.do"
+		class="cn.com.kingkit.mvc.action.comm.MenuAction">
+		<property name="menu">
+			<ref bean="CommMenu" />
+		</property>
+		<property name="service">
+			<ref bean="CommMenuService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/menu.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/MenuEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/menu.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/MenuList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 链接 结束 -->
+
+	<!-- 用户 开始 -->
+	<bean id="/pages/comm/user.do"
+		class="cn.com.kingkit.mvc.action.comm.UserAction">
+		<property name="user">
+			<ref bean="CommUser" />
+		</property>
+		<property name="service">
+			<ref bean="UserService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/user.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/UserEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/user.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/UserList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 用户 结束 -->
+
+	<!-- 资源 开始 -->
+	<bean id="/pages/comm/resource.do"
+		class="cn.com.kingkit.mvc.action.comm.ResourceAction">
+		<property name="resource">
+			<ref bean="CommResource" />
+		</property>
+		<property name="service">
+			<ref bean="ResourceService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/resource.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/ResourceEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/resource.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/ResourceList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 资源 结束 -->
+
+	<!-- 角色 开始 -->
+	<bean id="/pages/comm/role.do"
+		class="cn.com.kingkit.mvc.action.comm.RoleAction">
+		<property name="role">
+			<ref bean="CommRole" />
+		</property>
+		<property name="service">
+			<ref bean="RoleService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/role.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/RoleEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/role.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/RoleList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 角色 结束 -->
+
+	<!-- 新闻 开始 -->
+	<bean id="/pages/official/news/news.do"
+		class="cn.com.kingkit.mvc.action.official.news.NewsAction">
+		<property name="news">
+			<ref bean="News" />
+		</property>
+		<property name="news2" scope="request">
+			<ref bean="News" />
+		</property>
+		<property name="service">
+			<ref bean="NewsService" />
+		</property>
+		<property name="service1">
+			<ref bean="NewsTypeService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/official/news/news.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/official/news/NewsEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/official/news/news.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/official/news/NewsList.jsp</value>
+				</entry>
+				<entry key="collectionList">
+					<value>/pages/official/news/CollectionList.jsp</value>
+				</entry>
+				<entry key="getCollectionList">
+					<value>/pages/official/news/news.do?act=collectionList</value>
+				</entry>
+				<entry key="getFindList">
+					<value>/pages/official/news/news.do?act=find</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 新闻 结束 -->
+
+	<!-- 学生网文章 开始 -->
+	<bean id="/pages/students/artical.do"
+		class="cn.com.kingkit.mvc.action.students.StudentsArticalAction">
+		<property name="studentsArtical">
+			<ref bean="StudentsArtical" />
+		</property>
+		<property name="service">
+			<ref bean="StudentsArticalService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/students/artical.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/students/artical/StudentsArticalEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/students/artical.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/students/artical/StudentsArticalList.jsp
+					</value>
+				</entry>
+				<entry key="collectionList">
+					<value>/pages/students/artical/CollectionList.jsp</value>
+				</entry>
+				<entry key="getCollectionList">
+					<value>/pages/students/artical.do?act=collectionList</value>
+				</entry>
+				<entry key="getFindList">
+					<value>/pages/students/artical.do?act=find</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!--学生网文章 结束 -->
+	
+	<!-- 学生工作专题 开始 -->
+	<bean id="/pages/students/studentsTopic/topic.do"
+		class="cn.com.kingkit.mvc.action.students.StudentsTopicAction">
+		<property name="officialPicture">
+			<ref bean="OfficialPicture" />
+		</property>
+		<property name="service">
+			<ref bean="OfficialPictureService" />
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/students/studentsTopic/topic.do?act=list
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/students/studentsWorkTopic/TopicEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/students/studentsTopic/topic.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/students/studentsWorkTopic/TopicList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 学生工作专题 结束 -->
+	
+	<!--查看更多学生专题 开始  -->
+	<bean id="/web/students/moreTopic.do"  
+		class="cn.com.kingkit.mvc.action.students.web.MoreTopicAction">
+		<property name="topic">
+			<ref bean="OfficialPicture" />
+		</property>
+		<property name = "service">
+			<ref bean="OfficialPictureService"/>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="get">
+				<value>/web/students/MoreTopic.jsp</value></entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 查看更多学生专题 结束 -->
+
+	<!-- 思政教育网文章 开始 -->
+	<bean id="/pages/political/artical.do"
+		class="cn.com.kingkit.mvc.action.political.PoliticalArticalAction">
+		<property name="politicalArtical">
+			<ref bean="PoliticalArtical" />
+		</property>
+		<property name="service">
+			<ref bean="PoliticalArticalService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/political/artical.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/political/artical/PoliticalArticalEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/political/artical.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/political/artical/PoliticalArticalList.jsp
+					</value>
+				</entry>
+				<entry key="collectionList">
+					<value>/pages/political/artical/CollectionList.jsp</value>
+				</entry>
+				<entry key="getCollectionList">
+					<value>/pages/political/artical.do?act=collectionList</value>
+				</entry>
+				<entry key="getFindList">
+					<value>/pages/political/artical.do?act=find</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!--思政教育网文章 结束 -->
+
+	<!-- 官网图片管理 开始 -->
+	<bean id="/pages/official/picture/officialPicture.do"
+		class="cn.com.kingkit.mvc.action.official.OfficialPictureAction">
+		<property name="officialPicture">
+			<ref bean="OfficialPicture" />
+		</property>
+		<property name="service">
+			<ref bean="OfficialPictureService" />
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/official/picture/officialPicture.do?act=list
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/official/picture/OfficialPictureEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/official/picture/officialPicture.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/official/picture/OfficialPictureList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 官网图片管理 结束 -->
+
+	<!-- 留言板管理 开始 -->
+	<bean id="/pages/official/message/message.do"
+		class="cn.com.kingkit.mvc.action.official.MessageAction">
+		<property name="message2">
+			<ref bean="Message" />
+		</property>
+		<property name="service">
+			<ref bean="MessageService" />
+		</property>
+
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/official/message/message.do?act=list[redirect]
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/official/message/MessageEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/official/message/message.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/official/message/MessageList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 留言板管理 结束 -->
+
+	<!-- 前台留言 开始 -->
+	<bean id="/web/message/message.do"
+		class="cn.com.kingkit.mvc.action.official.MessageAction">
+		<property name="message2">
+			<ref bean="Message" />
+		</property>
+		<property name="service">
+			<ref bean="MessageService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/web/message/message.do?act=list[redirect]
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>/web/message/Message.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/web/message/message.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/web/message/Message.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 前台留言 结束 -->
+	<!-- 现任领导 开始 -->
+	<bean id="/pages/official/teacherNews/teacherNews.do"
+		class="cn.com.kingkit.mvc.action.official.teacherNews.TeacherNewsAction">
+		<property name="teacherNews">
+			<ref bean="TeacherNews" />
+		</property>
+		<property name="service">
+			<ref bean="TeacherNewsService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/official/teacherNews/teacherNews.do?act=list[redirect]
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/official/teacherNews/TeacherNewsEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/official/teacherNews/teacherNews.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/official/teacherNews/TeacherNewsList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 现任领导 结束 -->
+
+	<!-- 师资队伍 开始 -->
+	<bean id="/pages/official/teachers/teachers.do"
+		class="cn.com.kingkit.mvc.action.official.teachers.TeachersAction">
+		<property name="teachers">
+			<ref bean="Teachers" />
+		</property>
+		<property name="service">
+			<ref bean="TeachersService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/official/teachers/teachers.do?act=list[redirect]
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/official/teachers/TeachersEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/official/teachers/teachers.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/official/teachers/TeachersList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 师资队伍 结束 -->
+
+	<!-- 官网图片新闻 开始 -->
+	<bean id="/pages/official/pictureNews/pictureNews.do"
+		class="cn.com.kingkit.mvc.action.official.pictureNews.PictureNewsAction">
+		<property name="pictureNews">
+			<ref bean="PictureNews" />
+		</property>
+		<property name="service">
+			<ref bean="PictureNewsService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/official/pictureNews/pictureNews.do?act=list[redirect]
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/official/pictureNews/PictureNewsEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/official/pictureNews/pictureNews.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/official/pictureNews/PictureNewsList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 官网图片新闻 结束 -->
+	
+	<!-- 学工队伍 开始 -->
+	<bean id="/pages/student/students/students.do"
+		class="cn.com.kingkit.mvc.action.students.StudentsAction">
+		<property name="students">
+			<ref bean="Students" />
+		</property>
+		<property name="service">
+			<ref bean="StudentsService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/student/students/students.do?act=list[redirect]
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/students/students/StudentsEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/student/students/students.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/students/students/StudentsList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 学工队伍 结束 -->
+	
+	<!-- 学生网图片新闻 开始 -->
+	<bean id="/pages/student/newsPic/newsPic.do"
+		class="cn.com.kingkit.mvc.action.students.NewsPicAction">
+		<property name="studentsArtical">
+			<ref bean="StudentsArtical" />
+		</property>
+		<property name="service">
+			<ref bean="StudentsArticalService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>
+						/pages/student/newsPic/newsPic.do?act=list[redirect]
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/pages/students/newsPic/NewsPicEdit.jsp
+					</value>
+				</entry>
+				<entry key="del">
+					<value>
+						/pages/student/newsPic/newsPic.do?act=del
+					</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/pages/students/newsPic/NewsPicList.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 学生网图片新闻 结束 -->
+
+	<!-- 官网首页开始 -->
+	<bean id="/web/official/index.do"
+		class="cn.com.kingkit.mvc.action.official.web.IndexAction">
+		<property name="officialPictureService">
+			<ref bean="OfficialPictureService" />
+		</property>
+		<property name="pictureNewsService">
+			<ref bean="PictureNewsService" />
+		</property>
+		<property name="newsService">
+			<ref bean="NewsService" />
+		</property>
+		<property name="linkService">
+			<ref bean="LinkService" />
+		</property>
+		<property name="officialPictureList1">
+			<list></list>
+		</property>
+		<property name="officialPictureList2">
+			<list></list>
+		</property>
+		<property name="officialPictureList3">
+			<list></list>
+		</property>
+		<property name="newsList">
+			<list></list>
+		</property>
+		<property name="linkList">
+			<list></list>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/web/official/OfficialIndex.jsp
+					</value>
+				</entry>
+			</map>
+		</property>	 
+	</bean>
+	<!-- 官网首页结束 -->
+	
+	<!-- 学生网首页开始 -->
+	<bean id="/web/students/index.do"
+		class="cn.com.kingkit.mvc.action.students.web.IndexAction">
+		<property name="studentsArticalService">
+			<ref bean="StudentsArticalService" />
+		</property>
+		<property name="newsService">
+			<ref bean="NewsService" />
+		</property>
+		<property name="linkService">
+			<ref bean="LinkService" />
+		</property>
+		<property name="officialPictureService"> 
+			<ref  bean="OfficialPictureService"/>
+		</property>
+		<property name="studentPictureList1">
+			<list></list>
+		</property>
+		<property name="studentPictureList2">
+			<list></list>
+		</property>
+		<property name="studentsArticalList">
+			<list></list>
+		</property>
+		<property name="topic">
+			<list></list>
+		</property>
+		<property name="newsList">
+			<list></list>
+		</property>
+		<property name="linkList">
+			<list></list>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/web/students/StudentsIndex.jsp
+					</value>
+				</entry>
+			</map>
+		</property>	 
+	</bean>
+	<!-- 学生网首页结束 -->
+	
+	<!-- 前台现任领导开始 -->
+	<bean id="/web/official/webTeacherNews/teacherNews.do"
+		class="cn.com.kingkit.mvc.action.official.web.webTeacherNews.WebTeacherNewsAction">
+		<property name="teacherNews">
+			<ref bean="TeacherNews" />
+		</property>
+		<property name="teacherNewsService">
+			<ref bean="TeacherNewsService" />
+		</property>
+		<property name="news">
+			<ref bean="News" />
+		</property>
+		<property name="newsService">
+			<ref bean="NewsService" />
+		</property>
+		<property name="teacherNewsList">
+			<list></list>
+		</property>
+		<property name="newsList1">
+			<list></list>
+		</property>
+		<property name="newsList2">
+			<list></list>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/web/official/webTeacherNews/WebTeacherNews.jsp
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/web/official/webTeacherNews/TeacherNews.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 前台现任领导结束 -->
+	<!-- 前台师资队伍开始 -->
+	<bean id="/web/official/webTeachers/teachers.do"
+		class="cn.com.kingkit.mvc.action.official.web.webTeachers.WebTeachersAction">
+		<property name="teachers">
+			<ref bean="Teachers" />
+		</property>
+		<property name="teachersService">
+			<ref bean="TeachersService" />
+		</property>
+		<property name="news">
+			<ref bean="News" />
+		</property>
+		<property name="newsService">
+			<ref bean="NewsService" />
+		</property>
+		<property name="teachersList">
+			<list></list>
+		</property>
+		<property name="newsList1">
+			<list></list>
+		</property>
+		<property name="newsList2">
+			<list></list>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/web/official/webTeachers/WebTeachers.jsp
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/web/official/webTeachers/Teachers.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 前台师资队伍结束 -->
+	<!-- 前台学工队伍开始 -->
+	<bean id="/web/students/webStudents/students.do"
+		class="cn.com.kingkit.mvc.action.students.web.webStudents.WebStudentsAction">
+		<property name="students">
+			<ref bean="Students" />
+		</property>
+		<property name="studentsService">
+			<ref bean="StudentsService" />
+		</property>
+		<property name="news">
+			<ref bean="News" />
+		</property>
+		<property name = "newsService">
+			<ref bean="NewsService"/>
+		</property>
+		<property name="studentsArtical">
+			<ref bean="StudentsArtical" />
+		</property>
+		<property name = "studentsArticalService">
+			<ref bean="StudentsArticalService"/>
+		</property>
+		<property name="studentsList">
+			<list></list>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>
+						/web/students/webStudents/WebStudents.jsp
+					</value>
+				</entry>
+				<entry key="edit">
+					<value>
+						/web/students/webStudents/Students.jsp
+					</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 前台学工队伍结束 -->
+
+	<!-- 留言板开始 -->
+	<bean id="/web/official/message.do" class="cn.com.kingkit.mvc.action.official.web.MessageBoardAction">
+		<property name="service">
+			<ref bean="MessageService" />
+		</property>
+		<property name="msg">
+			<ref bean="Message" />
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/web/official/MessageBoard.jsp</value>
+				</entry>
+				<entry key="getList">
+		<value>/web/official/message.do?act=list[redirect]</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<!-- 留言板结束 -->
+	
+	<!--查看文章内容 开始  -->
+		<bean id="/web/official/news/getArticle.do"
+		class="cn.com.kingkit.mvc.action.official.web.GetArticleAction">
+		<property name = "article">
+			<ref bean="News"/>
+		</property>
+		<property name = "newsService">
+			<ref bean="NewsService"/>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="get">
+				<value>/web/official/OfficialArticle.jsp</value></entry>
+			</map>
+		</property>	
+	</bean>
+	<!--查看文章内容 结束  -->
+	
+	<!--图片新闻 开始  -->
+		<bean id="/web/official/news/getPictureNews.do"
+		class="cn.com.kingkit.mvc.action.official.web.GetPictureNewsAction">
+		<property name = "article">
+			<ref bean="PictureNews"/>
+		</property>
+		<property name = "newsService">
+			<ref bean="PictureNewsService"/>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="get">
+				<value>/web/official/OfficialPictureNews.jsp</value></entry>
+			</map>
+		</property>	
+	</bean>
+	<!--查图片新闻结束  -->
+	
+	<!--查看更多 开始  -->
+	<bean id="/web/official/moreArticle.do"  
+		class="cn.com.kingkit.mvc.action.official.web.MoreArticleAction">
+		<property name="news">
+			<ref bean="News" />
+		</property>
+		<property name = "newsService">
+			<ref bean="NewsService"/>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="get">
+				<value>/web/official/MoreArticle.jsp</value></entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 查看更多 结束 -->
+	<!-- 前台思政教育 开始  -->
+	<bean id="/web/political/political.do"  
+		class="cn.com.kingkit.mvc.action.political.web.PoliticalAction">
+		<property name="news">
+			<ref bean="News" />
+		</property>
+		<property name = "newsService">
+			<ref bean="NewsService"/>
+		</property>
+		<property name="studentsArtical">
+			<ref bean="StudentsArtical" />
+		</property>
+		<property name = "studentsArticalService">
+			<ref bean="StudentsArticalService"/>
+		</property>
+		<property name="politicalArtical">
+			<ref bean="PoliticalArtical" />
+		</property>
+		<property name = "politicalArticalService">
+			<ref bean="PoliticalArticalService"/>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="list">
+				<value>/web/political/Political.jsp</value></entry>
+				<entry key="edit">
+				<value>/web/political/PoliticalArtical.jsp</value></entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 前台思政教育 结束 -->
+	
+	<!--查看学生网文章  开始  -->
+		<bean id="/web/students/article/getArticle.do"
+		class="cn.com.kingkit.mvc.action.students.web.GetArticleAction">
+		<property name = "article">
+			<ref bean="StudentsArtical"/>
+		</property>
+		<property name = "studentsArtcileService">
+			<ref bean="StudentsArticalService"/>
+		</property>
+		<property name="result">
+			<map>
+				<entry key="get">
+				<value>/web/students/StudentsArticle.jsp</value></entry>
+			</map>
+		</property>	
+	</bean>
+	<!--查看学生网文章 结束  -->
+	
+	<!--学生网 更多 开始  -->
+		<bean id="/web/students/moreArticle.do"  
+		class="cn.com.kingkit.mvc.action.students.web.MoreArticleAction">
+		<property name="article">
+			<ref bean="StudentsArtical" />
+		</property>
+		<property name = "articleService">
+			<ref bean="StudentsArticalService"/>
+		</property>
+		<property name = "newsService">
+			<ref bean="NewsService"/>
+		</property>
+		<property name = "news">
+			<ref bean="News"/>
+		</property>
+		
+		<property name="result">
+			<map>
+				<entry key="get">
+				<value>/web/students/MoreArticle.jsp</value></entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!--学生网 更多 结束  -->
+	
+</beans>

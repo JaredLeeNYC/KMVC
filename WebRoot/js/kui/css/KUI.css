@@ -1,0 +1,355 @@
+﻿@CHARSET "UTF-8";
+
+/*-------------- KUI Button start -------------------*/
+a.button {
+	background: transparent url('../images/BtnRightBG.gif') no-repeat scroll
+		top right;
+	color: #444;
+	display: inline-block;
+	font: normal 12px arial, sans-serif;
+	height: 24px;
+	margin-right: 6px;
+	padding-right: 10px; /* sliding doors padding */
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.button span {
+	background: transparent url('../images/BtnLeftBG.gif') no-repeat;
+	display: block;
+	line-height: 18px;
+	padding: 3px 0 3px 10px;
+}
+
+a.button span img {
+	width: 16px;
+	height: 16px;
+	margin-top: 0px; /*for firefox*/ /*margin-top:2px\9;for ie*/
+	_margin-top: 2px; /*for ie6*/
+	border: none;
+}
+
+a.button:hover {
+	background-position: center right;
+	text-decoration: none;
+}
+
+a.button:hover span {
+	background-position: center left;
+}
+
+a.button:active,a.button:focus { /*ie8在active的时候有bug，要加focus才有效果*/
+	background-position: bottom right;
+	color: #000;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span,a.button:focus span {
+	/*ie8在active的时候有bug，要加focus才有效果*/
+	background-position: bottom left;
+	/*padding: 4px 0 2px 10px;  push text down 1px */
+}
+
+/*以下为小按钮样式*/
+a.button-small {
+	background: transparent url('../images/BtnRightBG-small.gif') no-repeat
+		scroll top right;
+	color: #444;
+	display: inline-block;
+	font: normal 12px arial, sans-serif;
+	height: 18px;
+	margin-right: 6px;
+	padding-right: 10px; /* sliding doors padding */
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.button-small span {
+	background: transparent url('../images/BtnLeftBG-small.gif') no-repeat;
+	display: block;
+	line-height: 14px;
+	padding: 2px 0 2px 10px;
+	/**padding: 4px 0 0 10px;*/
+}
+
+a.button-small:hover {
+	background-position: center right;
+	text-decoration: none;
+}
+
+a.button-small:hover span {
+	background-position: center left;
+}
+
+a.button-small:active,a.button-small:focus {
+	background-position: bottom right;
+	color: #000;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button-small:active span,a.button-small:focus span {
+	background-position: bottom left;
+}
+
+/*-------------- KUI Button end -------------------*/
+
+/*-------------- KUI Dialog start -------------------*/ 
+/*最外层div*/
+.Dialog {
+	width: 50%;
+	z-index: 1000;
+}
+
+.Dialog span {
+	display: block;
+}
+
+/*顶部样式*/
+.DialogTC {
+	height: 34px;
+	padding: 0 9px;
+}
+
+.DialogTL,.DialogTR {
+	width: 9px;
+	height: 34px;
+	font-size: 0%;
+	margin-top: -34px;
+}
+
+/*左上角*/
+.DialogTL {
+	float: left;
+	background-image: url(../images/DialogTL.png);
+	background-repeat: no-repeat;
+}
+
+/*右上角*/
+.DialogTR {
+	float: right;
+	background-image: url(../images/DialogTR.png);
+	background-repeat: no-repeat;
+}
+
+/*这是可左右伸展的区域，两例留出空白便于放置左右角容器*/
+.DialogTC span {
+	height: 34px;
+	font-size: 0%;
+	width: 100%;
+	background-image: url(../images/DialogTC.png);
+	background-repeat: repeat-x;
+}
+
+/*中间样式*/
+.DialogMiddle {
+	overflow: hidden;
+	zoom: 1;
+}
+
+/*两列等高*/
+.DialogML,.DialogMR {
+	width: 9px;
+	padding-bottom: 30000px;
+	margin-bottom: -30000px;
+}
+
+/*左边框*/
+.DialogML {
+	float: left;
+	background-image: url(../images/DialogML.png);
+	background-repeat: repeat-y;
+	_margin-right: -9px; /*ie6时，中间的容器与左右两边有间距*/
+}
+
+/*右边框*/
+.DialogMR {
+	float: right;
+	background-image: url(../images/DialogMR.png);
+	background-repeat: repeat-y;
+	_margin-left: -9px; /*ie6时，中间的容器与左右两边有间距*/
+}
+
+/*内容区*/
+.DialogContent {
+	margin: 0 9px;
+	border: none;
+	background-color: #fff;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/*内容，当打开一个网址时用iframe显示*/
+.DialogContentIframe {
+	width: 100%;
+	overflow: visible;
+	border: none;
+}
+
+/*内容，当打开非网址时*/
+.DialogContentText {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	background: #fff;
+}
+
+.DialogHandler {
+	height: 24px; /*icon 16*16,总高34*/
+	display: block;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.DialogHandler:hover {
+	cursor: move;
+}
+
+/*左上角图标*/
+.DialogIcon {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../images/DialogIcon.png);
+}
+
+/*标题*/
+.DialogTitle {
+	font-size: 12px;
+	line-height: 14px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+/*关闭按钮*/
+.DialogCloseBtn {
+	float: right;
+	width: 33px;
+	height: 20px;
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: -7px;
+	overflow: hidden;
+	background: url(../images/DialogCloseBtn.gif);
+	cursor: pointer;
+}
+
+.DialogCloseBtn-over {
+	background: url(../images/DialogCloseBtn-over.gif);
+}
+
+.DialogCloseBtn-down {
+	background: url(../images/DialogCloseBtn-down.gif);
+}
+
+/*iframe，用于ie下遮盖select*/
+.DialogIframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	border: none;
+	z-index: -1;
+}
+
+.DialogMask {
+	position: absolute;
+	z-index: 999;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	background: #000;
+	padding: 0;
+	margin: 0;
+}
+
+/*底部样式*/ /*这是可左右伸展的区域，两例留出空白便于放置左右列同高容器*/
+.DialogBC {
+	padding: 0 9px;
+	height: 9px;
+}
+
+.DialogBC span {
+	width: 100%;
+	height: 9px;
+	font-size: 0%;
+	background-image: url(../images/DialogBC.png);
+	background-repeat: repeat-x;
+}
+
+.DialogBL,.DialogBR {
+	height: 9px;
+	font-size: 0%;
+	width: 9px;
+	margin-top: -9px;
+}
+
+/*左下角*/
+.DialogBL {
+	float: left;
+	background-image: url(../images/DialogBL.png);
+	background-repeat: no-repeat;
+}
+
+/*右下角*/
+.DialogBR {
+	float: right;
+	background-image: url(../images/DialogBR.png);
+	background-repeat: no-repeat;
+}
+
+/*-------------- KUI Dialog end -------------------*/
+
+/*-------------- KUI Alert start -------------------*/ 
+/*Alert内容区*/
+.DialogAlertContentDiv {
+	padding: 0 10px;
+	text-align: center;
+}
+
+/*Alert底部按钮区*/
+.DialogAlertBtnDiv {
+	text-align: center;
+	margin: 0 9px;
+	margin-top: -29px; *+
+	padding-top: 3px;
+	height: 30px;
+	line-height: 30px;
+	background: #eee;
+	border-top: 1px solid #fff;
+}
+
+/*-------------- KUI Alert end -------------------*/
+
+/*-------------- KUI Tip start -------------------*/ 
+/*提示信息*/
+.tip {
+	font-size: 12px;
+	z-index: 1001;
+}
+
+.tipArrow { /*右边有颜色，其他透明*/
+	border-color: transparent transparent #e00 transparent;
+	border-style: solid;
+	border-width:  0px 4px 4px 4px;
+	padding: 0;
+	width: 0;
+	height: 0;
+	/* ie6 height fix */
+	font-size: 0;
+	line-height: 0;
+	/* ie6 transparent fix */
+	_border-left-color: #dddddd;
+	_border-right-color: #dddddd;
+	_filter: chroma(color =   #dddddd);
+	/*float: left;*/
+	margin-left: 5px;
+}
+
+.tipContent {
+	padding: 3px;
+	border: 2px solid #e00;
+	background-color: #ea0;
+	/*margin-left: 6px;*/
+	line-height: 1em;
+}
+/*-------------- KUI Tip end -------------------*/

@@ -1,0 +1,13 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+
+import cn.com.kingkit.mvc.exception.BusinessException;
+
+import cn.com.kingkit.mvc.model.WebInfo;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class WebInfoService extends BaseService<WebInfo> implements Serializable {
+	
+           
+}

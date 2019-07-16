@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kingkit/!svn/ver/4029/KMVC/src/cn/com/kingkit/mvc/exception
+END
+Note.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kingkit/!svn/ver/4029/KMVC/src/cn/com/kingkit/mvc/exception/Note.txt
+END
+BusinessException.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/kingkit/!svn/ver/4029/KMVC/src/cn/com/kingkit/mvc/exception/BusinessException.java
+END
+DataAccessException.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/kingkit/!svn/ver/4029/KMVC/src/cn/com/kingkit/mvc/exception/DataAccessException.java
+END

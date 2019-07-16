@@ -1,0 +1,69 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+import java.sql.SQLException;
+import java.util.List;
+
+import cn.com.kingkit.mvc.dao.BaseDao;
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.Students;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class StudentsService extends BaseService<Students> implements
+		Serializable {
+	public void save(Students students) throws BusinessException, SQLException {
+		if (null != students.getId() && 0 != students.getId()) {
+			update(students);
+		} else {
+			students.setSortNum(Long.valueOf(BaseDao.getMaxNum("sortNum", "Students")+1));
+			add(students);
+		}
+	}
+
+	public void upWard(Students students){
+		Students a = get(students);
+		Students b = new Students();
+		int i = 0;
+		List<Students> list = list(new Students(), null, null,
+				"order by sortNum desc", true);
+		for (Students temp : list) {
+			i++;
+			if (a.getId() == temp.getId()) {
+				break;
+			}
+			b.setId(temp.getId());
+		}
+		if (i != 1) {
+			b = get(b);
+			Long c = a.getSortNum();
+			a.setSortNum(b.getSortNum());
+			b.setSortNum(c);
+			update(a);
+			update(b);
+		}
+	}
+
+	public void downWard(Students students)  {
+		Students a = get(students);
+		Students b = new Students();
+		int i = 0;
+		List<Students> list = list(new Students(), null, null,
+				"order by sortNum", true);
+		for (Students temp : list) {
+			i++;
+			if (a.getId() == temp.getId()) {
+				break;
+			}
+			b.setId(temp.getId());
+		}
+		if (i != 1) {
+			b = get(b);
+
+			Long c = a.getSortNum();
+			a.setSortNum(b.getSortNum());
+			b.setSortNum(c);
+			update(a);
+			update(b);
+		}
+	}
+}

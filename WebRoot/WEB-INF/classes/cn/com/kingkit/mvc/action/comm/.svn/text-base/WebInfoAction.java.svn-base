@@ -1,0 +1,59 @@
+package cn.com.kingkit.mvc.action.comm;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import cn.com.kingkit.mvc.controller.BaseAction;
+import cn.com.kingkit.mvc.controller.IAction;
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.WebInfo;
+import cn.com.kingkit.mvc.service.impl.WebInfoService;
+
+public class WebInfoAction extends BaseAction implements Serializable, IAction 
+{
+	
+	private WebInfo webInfo = null;
+	private WebInfoService service = null;
+	private boolean flag = false;
+	
+  public String execute(HttpServletRequest request, HttpServletResponse response, 
+		ServletConfig servletConfig) {
+	
+
+	String act = request.getParameter("act");
+	if (null != act) {
+		 if ("get".equals(act)) {
+			 webInfo.setId(1L);
+			 webInfo = service.get(webInfo); 
+			 return getReturnURL(EDIT);
+		}
+
+		else if ("save".equals(act)) {
+			service.update(webInfo);
+			flag = true;
+			request.setAttribute("flag", flag);
+			 return getReturnURL(EDIT);
+		}
+
+	   addMessage("参数不正确!! act=" + act);
+	   return getReturnURL(ERROR);
+	}
+	return null;
+	}
+
+public WebInfo getWebInfo() {
+	return webInfo;
+}
+
+public void setWebInfo(WebInfo webInfo) {
+	this.webInfo = webInfo;
+}
+
+public void setService(WebInfoService service) {
+	this.service = service;
+}
+}

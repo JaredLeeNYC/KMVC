@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	
+	<!-- 配置用户BEAN 开始 -->
+	<bean id="CommUser" class="cn.com.kingkit.mvc.model.CommUser">
+
+	</bean>
+	<!-- 配置用户BEAN 结束 -->
+
+	<!-- 配置资源BEAN 开始 -->
+	<bean id="CommResource"
+		class="cn.com.kingkit.mvc.model.CommResource">
+
+	</bean>
+	<!-- 配置资源BEAN 结束 -->
+		<!-- 配置菜单BEAN 开始 -->
+	<bean id="CommMenu" class="cn.com.kingkit.mvc.model.CommMenu">
+
+	</bean>
+
+	<!-- 配置角色BEAN 开始 -->
+	<bean id="CommRole" class="cn.com.kingkit.mvc.model.CommRole">
+
+	</bean>
+	<!-- 配置角色BEAN 结束 -->
+
+	<!-- 配置分页控制BEAN 开始 -->
+	<bean id="PageController"
+		class="cn.com.kingkit.mvc.util.PageController">
+
+	</bean>
+	<!-- 配置分页控制BEAN 结束 -->
+
+	<!-- 配置用户service 开始 -->
+	<bean id="UserService"
+		class="cn.com.kingkit.mvc.service.impl.CommUserService">
+
+	</bean>
+	<!-- 配置用户service 结束 -->
+
+	<!-- 配置资源service 开始 -->
+	<bean id="ResourceService"
+		class="cn.com.kingkit.mvc.service.impl.CommResourceService">
+	</bean>
+	<!-- 配置资源service 结束 -->
+
+	<!-- 配置角色service BEAN 开始 -->
+	<bean id="RoleService"
+		class="cn.com.kingkit.mvc.service.impl.CommRoleService">
+	</bean>
+	<!-- 配置角色service BEAN 结束 -->
+
+<!-- 配置菜单service 开始 -->
+	<bean id="CommMenuService"
+		class="cn.com.kingkit.mvc.service.impl.CommMenuService">
+
+	</bean>
+	<!-- 配置菜单service 结束 -->
+
+
+	<!-- 配置登录,登出 开始 -->
+	<bean id="/adminLoginout.do"
+		class="cn.com.kingkit.mvc.action.comm.AdminLoginoutAction">
+		<property name="user">
+			<ref bean="CommUser" />
+		</property>
+		<property name="service">
+			<ref bean="UserService" />
+		</property>
+		<property name="loginUser" scope="session">
+			<ref bean="CommUser" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="success">
+					<value>/pages/main/Main.jsp[redirect]</value>
+				</entry>
+				<entry key="failure">
+					<value>/Login.jsp</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/main/InfoEdit.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/main/Main.jsp</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<!-- 配置登录,登出 结束 -->
+
+	
+	
+
+	<!-- 菜单  开始 -->
+	<bean id="/pages/comm/menu.do"
+		class="cn.com.kingkit.mvc.action.comm.MenuAction">
+		<property name="menu">
+			<ref bean="CommMenu" />
+		</property>
+		<property name="service">
+			<ref bean="CommMenuService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/menu.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/MenuEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/menu.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/MenuList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 菜单 结束 -->
+
+	<!-- 用户 开始 -->
+	<bean id="/pages/comm/user.do"
+		class="cn.com.kingkit.mvc.action.comm.UserAction">
+		<property name="user">
+			<ref bean="CommUser" />
+		</property>
+		<property name="service">
+			<ref bean="UserService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/user.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/UserEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/user.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/UserList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 用户 结束 -->
+
+	<!-- 资源 开始 -->
+	<bean id="/pages/comm/resource.do"
+		class="cn.com.kingkit.mvc.action.comm.ResourceAction">
+		<property name="resource">
+			<ref bean="CommResource" />
+		</property>
+		<property name="service">
+			<ref bean="ResourceService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/resource.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/ResourceEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/resource.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/ResourceList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 资源 结束 -->
+
+	<!-- 角色 开始 -->
+	<bean id="/pages/comm/role.do"
+		class="cn.com.kingkit.mvc.action.comm.RoleAction">
+		<property name="role">
+			<ref bean="CommRole" />
+		</property>
+		<property name="service">
+			<ref bean="RoleService" />
+		</property>
+		<property name="result">
+			<map>
+				<entry key="getList">
+					<value>/pages/comm/role.do?act=list</value>
+				</entry>
+				<entry key="edit">
+					<value>/pages/comm/RoleEdit.jsp</value>
+				</entry>
+				<entry key="del">
+					<value>/pages/comm/role.do?act=del</value>
+				</entry>
+				<entry key="error">
+					<value>/error/WebError.jsp</value>
+				</entry>
+				<entry key="list">
+					<value>/pages/comm/RoleList.jsp</value>
+				</entry>
+			</map>
+		</property>
+		<property name="pager">
+			<ref bean="PageController" />
+		</property>
+	</bean>
+	<!-- 角色 结束 -->
+
+	
+	
+</beans>

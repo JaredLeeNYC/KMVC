@@ -1,0 +1,14 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+import cn.com.kingkit.mvc.model.NewsType;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class NewsTypeService extends BaseService<NewsType> implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4220420392340479391L;
+
+}

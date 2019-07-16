@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<!-- 初始化log4j目录 开始 -->
+	<listener>
+		<display-name>初始化log4j日志的目录，放到System.property里面(log.root)</display-name>
+		<listener-class>cn.com.kingkit.mvc.init.Init</listener-class>
+	</listener>
+	<!-- 初始化log4j目录 结束 -->
+
+	<!-- 编码过滤器 开始 -->
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>
+			cn.com.kingkit.mvc.init.EncodingFilter
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 编码过滤器 结束 -->
+	<!-- webInfo过滤器 开始 -->
+	<filter>
+		<filter-name>WebInfoFilter</filter-name>
+		<filter-class>
+			cn.com.kingkit.mvc.init.WebInfoFilter
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>WebInfoFilter</filter-name>
+		<url-pattern>/web/*</url-pattern>
+	</filter-mapping>
+	<!-- webInfo过滤器 结束 -->
+
+	<!-- 权限验证过滤器 开始 -->
+	<filter>
+		<filter-name>SecurityFilter</filter-name>
+		<filter-class>
+			cn.com.kingkit.mvc.security.SecurityFilter
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SecurityFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 权限验证过滤器 结束 -->
+	
+	<!-- 连接池配置信息开始 -->
+	<servlet>
+		<servlet-name>ServletConfigurator</servlet-name>
+		<servlet-class>
+			org.logicalcobwebs.proxool.configuration.ServletConfigurator
+		</servlet-class>
+		<init-param>
+			<param-name>propertyFile</param-name>
+			<param-value>WEB-INF/Proxool.properties</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<!--连接池监听
+	<servlet>
+		<servlet-name>proxool</servlet-name>
+		<servlet-class>
+			org.logicalcobwebs.proxool.admin.servlet.AdminServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>proxool</servlet-name>
+		<url-pattern>/Admin/proxool/</url-pattern>
+	</servlet-mapping>
+	-->
+	<!-- 连接池配置信息结束 -->
+		
+	<!-- 访问控制器 开始 -->
+	<servlet>
+		<servlet-name>RequestController</servlet-name>
+		<servlet-class>
+			cn.com.kingkit.mvc.controller.Controller
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<!-- 访问控制器 结束 -->
+
+	<servlet>
+		<servlet-name>BeanFactory Initialization</servlet-name>
+		<servlet-class>
+			cn.com.kingkit.beanFactory.Initialization
+		</servlet-class>
+		<init-param>
+			<param-name>configFile</param-name>
+			<param-value>
+				cn/com/kingkit/beanFactory/BeanConfig.xml
+			</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<welcome-file-list>
+		<welcome-file>Index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!--Error Page-->
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error/403.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/Error.jsp</location>
+	</error-page>
+	<!-- java.lang.Exception异常错误,依据这个标记可定义多个类似错误提示 -->
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/error/Error.jsp</location>
+	</error-page>
+	<!--添加rar文件mime类型 -->
+    <mime-mapping>
+        <extension>rar</extension>
+        <mime-type>application/rar</mime-type>
+    </mime-mapping>
+</web-app>

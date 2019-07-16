@@ -1,0 +1,26 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.Message;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class MessageService extends BaseService<Message> implements Serializable {
+	public void save(Message message) throws BusinessException{
+		if (null != message ) {
+			if(null != message.getId()){
+				update(message);
+			}else{
+				Date time = new Date(System.currentTimeMillis());
+				message.setTime(time);	
+				add(message);
+			}
+		}else {
+			throw new BusinessException("标题不能为空!");
+		}
+	}
+	
+  
+}

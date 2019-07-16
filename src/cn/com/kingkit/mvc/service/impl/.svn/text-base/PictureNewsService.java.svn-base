@@ -1,0 +1,69 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+import java.sql.SQLException;
+import java.util.List;
+
+import cn.com.kingkit.mvc.dao.BaseDao;
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.PictureNews;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class PictureNewsService extends BaseService<PictureNews> implements
+		Serializable {
+	public void save(PictureNews pictureNews) throws BusinessException, SQLException {
+		if (null != pictureNews.getId() && 0 != pictureNews.getId()) {
+			update(pictureNews);
+		} else {
+			pictureNews.setSortNum(Long.valueOf(BaseDao.getMaxNum("sortNum", "PictureNews")+1));
+			add(pictureNews);
+		}
+	}
+
+	public void upWard(PictureNews pictureNews){
+		PictureNews a = get(pictureNews);
+		PictureNews b = new PictureNews();
+		int i = 0;
+		List<PictureNews> list = list(new PictureNews(), null, null,
+				"order by sortNum desc", true);
+		for (PictureNews temp : list) {
+			i++;
+			if (a.getId() == temp.getId()) {
+				break;
+			}
+			b.setId(temp.getId());
+		}
+		if (i != 1) {
+			b = get(b);
+			Long c = a.getSortNum();
+			a.setSortNum(b.getSortNum());
+			b.setSortNum(c);
+			update(a);
+			update(b);
+		}
+	}
+
+	public void downWard(PictureNews pictureNews)  {
+		PictureNews a = get(pictureNews);
+		PictureNews b = new PictureNews();
+		int i = 0;
+		List<PictureNews> list = list(new PictureNews(), null, null,
+				"order by sortNum", true);
+		for (PictureNews temp : list) {
+			i++;
+			if (a.getId() == temp.getId()) {
+				break;
+			}
+			b.setId(temp.getId());
+		}
+		if (i != 1) {
+			b = get(b);
+
+			Long c = a.getSortNum();
+			a.setSortNum(b.getSortNum());
+			b.setSortNum(c);
+			update(a);
+			update(b);
+		}
+	}
+}

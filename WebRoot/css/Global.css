@@ -1,0 +1,149 @@
+﻿* {
+    scrollbar-3dlight-color: #D4D0C8; /*- 最外左 -*/
+    scrollbar-highlight-color: #fff; /*- 左二 -*/
+    scrollbar-face-color: #E4E4E4; /*- 面子 -*/
+    scrollbar-arrow-color: #666; /*- 箭头 -*/
+    scrollbar-shadow-color: #808080; /*- 右二 -*/
+    scrollbar-darkshadow-color: #D7DCE0; /*- 右一 -*/
+    scrollbar-base-color: #D7DCE0; /*- 基色 -*/
+    scrollbar-track-color:#;/*- 滑道 -*/
+}
+body {
+	background-color: #FFFFFF;
+	color: #444444;
+	margin:0;
+	padding:0;
+}
+a {
+	color: #08d;
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+}
+
+a:hover {
+	color: #f80;
+	text-decoration: underline;
+}
+a:active,
+a:focus {
+	color: #f60;
+	text-decoration: none;
+}
+a.selected {
+	background: #2266BB;
+	color: #CCFFFF;
+	text-decoration: none;
+}
+a[href^="#"]:focus, a[href^="javascript"]:focus {
+outline:0;
+-moz-outline-style: none;
+}
+div,
+blockquote,
+q,
+iframe,
+form,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+ul,
+dl,
+li { list-style: none; }
+a img {
+	border: none 0;
+	vertical-align: middle;
+}
+body,
+td,
+textarea {
+	word-break: break-all;
+	word-wrap: break-word;
+	line-height: 1.4;
+}
+body,
+input,
+textarea,
+select,
+button {
+	margin: 0;
+	font-size: 12px;
+	font-family: Tahoma, SimSun, sans-serif;
+}
+li{ font-family: SimSun, Tahoma, sans-serif;}
+div,
+p,
+table,
+th,
+td,font {
+	font-size: 1em;
+	font-family: inherit;
+	line-height: inherit;
+}
+
+iframe {
+	border-style: solid;
+	border-color: #778899;
+	border-width: 0;
+}
+
+h1 {
+	font-size: 24px;
+	font-family:SIMHEI, sans-serif;
+	font-weight: normal;
+}
+h2 {
+	font-size: 20px;
+	font-family:SIMHEI, sans-serif;
+	font-weight: normal;
+}
+h3 {
+	font-size: 16px;
+	font-family:Arial, sans-serif;
+	font-weight: bold;
+}
+h4 {
+	font-size: 14px;
+	font-family:Arial, sans-serif;
+	font-weight: bold;
+}
+h5 {
+	font-size: 13px;
+	font-family:SIMSUN, sans-serif;
+	font-weight: bold;
+}
+h6 {
+	font-size: 12px;
+	font-family:SIMSUN, sans-serif;
+	font-weight: bold;
+}
+
+hr {
+	clear:both;
+	margin:7px 0;
+	+margin: 0;
+	border:0 none;
+	font-size: 1px;
+	line-height:1px;
+	color: #ddd;
+	background-color:#ddd;
+	height: 1px;
+}
+
+pre,
+code { font-family: monospace; }
+/*Bugfix: 一些bug的修正 */
+* html textarea {overflow:scroll;overflow-x: hidden;}/*使多行文本框不显示默认的竖向滚动条*/
+form { display: inline; }

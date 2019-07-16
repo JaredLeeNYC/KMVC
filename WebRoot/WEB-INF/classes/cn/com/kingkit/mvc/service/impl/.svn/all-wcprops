@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/kingkit/!svn/ver/4838/KMVC/src/cn/com/kingkit/mvc/service/impl
+END
+NewsTypeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/kingkit/!svn/ver/4220/KMVC/src/cn/com/kingkit/mvc/service/impl/NewsTypeService.java
+END
+CommMenuService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/kingkit/!svn/ver/4336/KMVC/src/cn/com/kingkit/mvc/service/impl/CommMenuService.java
+END
+PoliticalArticalService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/kingkit/!svn/ver/4155/KMVC/src/cn/com/kingkit/mvc/service/impl/PoliticalArticalService.java
+END
+MessageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/kingkit/!svn/ver/4886/KMVC/src/cn/com/kingkit/mvc/service/impl/MessageService.java
+END
+CommRoleResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/kingkit/!svn/ver/4156/KMVC/src/cn/com/kingkit/mvc/service/impl/CommRoleResourceService.java
+END
+WebInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/kingkit/!svn/ver/4838/KMVC/src/cn/com/kingkit/mvc/service/impl/WebInfoService.java
+END
+CommUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/kingkit/!svn/ver/4181/KMVC/src/cn/com/kingkit/mvc/service/impl/CommUserService.java
+END
+LinkService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/kingkit/!svn/ver/4350/KMVC/src/cn/com/kingkit/mvc/service/impl/LinkService.java
+END
+TeachersService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/kingkit/!svn/ver/4545/KMVC/src/cn/com/kingkit/mvc/service/impl/TeachersService.java
+END
+LinkTypeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/kingkit/!svn/ver/4329/KMVC/src/cn/com/kingkit/mvc/service/impl/LinkTypeService.java
+END
+CommResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/kingkit/!svn/ver/4179/KMVC/src/cn/com/kingkit/mvc/service/impl/CommResourceService.java
+END
+PictureNewsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/kingkit/!svn/ver/4692/KMVC/src/cn/com/kingkit/mvc/service/impl/PictureNewsService.java
+END
+TeacherNewsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/kingkit/!svn/ver/4604/KMVC/src/cn/com/kingkit/mvc/service/impl/TeacherNewsService.java
+END
+OfficialPictureService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/kingkit/!svn/ver/4448/KMVC/src/cn/com/kingkit/mvc/service/impl/OfficialPictureService.java
+END
+StudentsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/kingkit/!svn/ver/4543/KMVC/src/cn/com/kingkit/mvc/service/impl/StudentsService.java
+END
+NewsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/kingkit/!svn/ver/4578/KMVC/src/cn/com/kingkit/mvc/service/impl/NewsService.java
+END
+CommRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/kingkit/!svn/ver/4509/KMVC/src/cn/com/kingkit/mvc/service/impl/CommRoleService.java
+END

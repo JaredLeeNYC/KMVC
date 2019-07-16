@@ -1,0 +1,274 @@
+﻿@import 'Global.css';
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,body {
+	_height: 100%;
+	_overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#header,#footer {
+	color: #fff;
+}
+
+/**
+ * 顶部
+ */
+#header {
+	height: 62px;
+	border-bottom: 3px #4ebae1 solid;
+}
+
+#headerLogo {
+	float: left;
+}
+
+#headerMsg {
+	color: white;
+	float: right;
+}
+
+#headerMsg a {
+	color: #fefe00;
+}
+
+/**
+ * 底部
+ */
+#footer {
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	border-top: 2px #4ebae1 solid;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#leftMenu {
+	height: 100%;
+	width: 145px;
+	overflow: hidden;
+	border: 1px solid #dadada;
+	margin: 3px 0 3px 3px;
+}
+
+#menuController {
+	width: 100%;
+	background: url(../images/main/MenuControllerBG.gif) repeat-x;
+	height: 20px;
+	padding: 8px;
+}
+
+#menuControllerText {
+	float: left;
+}
+
+#menuControllerArrow {
+	width: 20px;
+	height: 20px;
+	background: url(../images/main/MenuControllerArrow.gif) no-repeat;
+	float: right;
+	margin-right: 10px;
+	_margin-right: 4px;
+}
+
+#menuControllerArrow :hover {
+	cursor: pointer;
+}
+
+/*左栏菜单*/
+#navigation {
+	width: 100%;
+}
+
+#navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li {
+	/*border-bottom: 1px solid #9fcced;*/
+	text-align: center;
+}
+
+#navigation li a:link,#navigation li a:visited {
+	display: block;
+	padding: 0.4em 0 0.4em 0.2em;
+	/*border-left: 1px solid #157c98;
+	border-right: 1px solid #157c98;*/
+	/*background-color: #1092b5;*/
+	background-image: url(../images/main/Accordion+.gif);
+	color: #0c647c;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+#navigation li a:hover {
+	/*background-color: #157c98;*/
+	color: #000;
+}
+/*
+#navigation ul ul {
+	margin-left: 0px;
+}
+*/
+#navigation ul ul li {
+	margin: 0;
+}
+
+#navigation ul ul a:link,#navigation ul ul a:visited {
+	/*background-color: #9fcced;*/
+    background-image: url(../images/main/AccorndionSubBG_white.gif);
+	color: #154b71;
+	font-weight:normal;
+}
+
+#navigation ul ul a:hover {
+	background-color: #154b71;
+	margin-left: 3px;
+}
+
+#mainContent {
+	position: relative;
+	width: 100%;
+	height: 400px; /*当页面加载完后，用js重新设置了高度*/
+	overflow: auto;
+	margin: 3px;
+	overflow-x: hidden;
+}
+
+table { 
+	*border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.mainTable {
+	border: 1px solid #dddddd;
+	width: 100%;
+	font-size: 12px;
+	font-family: Tahoma, SimSun, sans-serif;
+}
+
+.mainTable thead tr th {
+	padding: 0 0 0 4px;
+	text-align: left;
+}
+
+.mainTable thead tr th.InstructionInfo {
+	padding:10px;
+	font-weight: normal;
+	line-height: 1.8em;
+}
+
+.mainTable thead tr th h3 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.mainTable .tableController {
+	background: url(../images/main/MainTableControllerBG.gif) repeat-x;
+	height: 33px;
+	line-height: 33px;
+}
+
+.tableController_bottom {
+	background: url(../images/main/MainTableControllerBG_bottom.gif)
+		repeat-x;
+	height: 33px;
+	line-height: 33px;
+}
+
+.tableControllerButton {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.mainTable thead .tableController {
+	color: #183152;
+}
+
+.mainTable thead .tableTitle {
+	background: url(../images/main/MainTableHeaderBG.gif) repeat-x;
+	height: 28px;
+	line-height: 28px;
+}
+
+.mainTable input,.mainTable tbody tr td input,.mainTable tbody tr td select
+	{
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle; /*与文字垂直居中对齐*/
+}
+
+.mainTable tbody tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+.mainTable tbody tr td {
+	padding: 0 0 0 4px;
+	border-bottom: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+}
+
+.mainTable .errorTip {
+	height: 50px;
+	color: red;
+}
+
+.oddRow {
+	background-color: #f9fbfc;
+}
+
+.evenRow {
+	background-color: #fff;
+}
+
+.rowOver {
+	background-color: #d8f79d;
+}
+
+.rowClicked {
+	background-color: #d8f79d;
+}
+
+.pageBar {
+	margin-right: 20px;
+}
+
+.pageBar a:hover {
+	text-decoration: none;
+}
+
+.pageBar a {
+	cursor: pointer;
+}
+
+.pageBar input {
+	width: 22px;
+	height: 18px;
+	line-height: 16px;
+	border: 1px solid #e4e4e4;
+	background-color: #fff;
+	border: 1px solid #0194d5;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#treebox_tree tr,#treebox_tree tr td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	height: 10px;
+	font-size: 10px;
+	overflow: hidden;
+}
+

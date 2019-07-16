@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kingkit/!svn/ver/4619/KMVC/src/cn/com/kingkit/mvc/util
+END
+JdbcUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kingkit/!svn/ver/4814/KMVC/src/cn/com/kingkit/mvc/util/JdbcUtil.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/kingkit/!svn/ver/4453/KMVC/src/cn/com/kingkit/mvc/util/Utils.java
+END
+PageController.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/kingkit/!svn/ver/4457/KMVC/src/cn/com/kingkit/mvc/util/PageController.java
+END
+Dom4jDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/kingkit/!svn/ver/4029/KMVC/src/cn/com/kingkit/mvc/util/Dom4jDemo.java
+END
+PropertyLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/kingkit/!svn/ver/4096/KMVC/src/cn/com/kingkit/mvc/util/PropertyLoader.java
+END
+ImageCompressUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/kingkit/!svn/ver/4734/KMVC/src/cn/com/kingkit/mvc/util/ImageCompressUtil.java
+END

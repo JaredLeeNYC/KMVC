@@ -1,0 +1,45 @@
+package cn.com.kingkit.mvc.model;
+
+import java.io.Serializable;
+
+public class WebInfo implements Serializable{
+	private Long id;//主键
+    private String keywords;//网站关键字
+    private String description;//网站基本描述
+    private String title;//网站标题
+    private String foot;//脚本信息
+
+
+	public String getKeywords() {
+		return keywords;
+	}
+	public void setKeywords(String keywords) {
+		this.keywords = keywords;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getFoot() {
+		return foot;
+	}
+	public void setFoot(String foot) {
+		this.foot = foot;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+    
+}

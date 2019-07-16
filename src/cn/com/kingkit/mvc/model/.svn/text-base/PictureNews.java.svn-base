@@ -1,0 +1,76 @@
+package cn.com.kingkit.mvc.model;
+
+import java.io.Serializable;
+
+public class PictureNews implements Serializable  {
+	private Long id;//主键
+	private String title;
+	private String author;
+	private String source;
+	private String content;//内容
+	private String picture;//照片
+	private String pic;//图片,可用于缩略图
+	private Long sortNum;//用于排序的序号, 初始值为id
+	private String time;
+	private Long clickNum;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public String getPic() {
+		return pic;
+	}
+	public void setPic(String pic) {
+		this.pic = pic;
+	}
+	public Long getSortNum() {
+		return sortNum;
+	}
+	public void setSortNum(Long sortNum) {
+		this.sortNum = sortNum;
+	}
+	public String getPicture() {
+		return picture;
+	}
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	public Long getClickNum() {
+		return clickNum;
+	}
+	public void setClickNum(Long clickNum) {
+		this.clickNum = clickNum;
+	}
+}

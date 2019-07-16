@@ -1,0 +1,10 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+
+import cn.com.kingkit.mvc.model.LinkType;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class LinkTypeService extends BaseService<LinkType> implements Serializable {
+
+}

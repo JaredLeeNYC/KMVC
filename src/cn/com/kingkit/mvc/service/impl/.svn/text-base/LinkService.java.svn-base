@@ -1,0 +1,26 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+import java.sql.SQLException;
+
+import cn.com.kingkit.mvc.dao.BaseDao;
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.Link;
+import cn.com.kingkit.mvc.model.News;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class LinkService extends BaseService<Link> implements Serializable {
+	public void save(Link link) throws BusinessException, SQLException{
+
+		if (null != link && null != link.getLinkName()) {
+			if(null != link.getId()&&0!=link.getId()){
+				update(link);
+			}else{
+				link.setSortNum(Long.valueOf(BaseDao.getMaxNum("id", "Link")+1));
+				add(link);
+			}
+		}else {
+			throw new BusinessException("链接名称不能为空!");
+		}
+	}
+}

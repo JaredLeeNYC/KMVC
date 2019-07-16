@@ -1,0 +1,46 @@
+package cn.com.kingkit.mvc.service.impl;
+
+
+import java.io.Serializable;
+
+import java.io.Serializable;
+import java.sql.SQLException;
+
+import javax.servlet.http.HttpServletRequest;
+
+import cn.com.kingkit.mvc.dao.BaseDao;
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.News;
+import cn.com.kingkit.mvc.service.BaseService;
+import cn.com.kingkit.mvc.util.Utils;
+
+
+public class NewsService extends BaseService<News> implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2458172016543949013L;
+
+	public void save(News News,HttpServletRequest request) throws BusinessException, SQLException{
+
+		if (null != News && null != News.getTitle()) {
+			if(null != News.getId()&&0!=News.getId()){
+				if(News.getStickNum()==1){
+					News.setSortNum(Long.valueOf(BaseDao.getMaxNum("sortNum", "News")+1));	
+				}else{
+					News.setSortNum(News.getId());
+				}
+				update(News);
+			}else{
+				if(News.getStickNum()==0){
+					News.setSortNum(Long.valueOf(BaseDao.getMaxNum("id", "News")+1));	
+				}else{
+					News.setSortNum(Long.valueOf(BaseDao.getMaxNum("sortNum", "News")+1));
+				}
+				add(News);
+			}
+		}else {
+			throw new BusinessException("新闻标题不能为空!");
+		}
+	}
+}

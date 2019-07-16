@@ -1,0 +1,92 @@
+package cn.com.kingkit.mvc.model;
+
+import java.io.Serializable;
+
+
+public class News implements Serializable{
+	private Long id;//主键
+	private Long newsTypeId;//新闻类型主键
+	private String title;//标题
+	private String author;//作者
+	private String source;//来源
+	private String time;//时间
+	private String content;//内容
+	private String pic;//图片,可用于缩略图
+	private Long stickNum;//用于置顶的序号, 1为置顶, 0为非置顶
+	private Long sortNum;//用于排序的序号, 初始值为id
+	private Long clickNum;//记录浏览次数
+	private Long state;//记录状态，表示是否在回收站，1表示在回收站
+	public Long getState() {
+		return state;
+	}
+	public void setState(Long state) {
+		this.state = state;
+	}
+	public Long getClickNum() {
+		return clickNum;
+	}
+	public void setClickNum(Long clickNum) {
+		this.clickNum = clickNum;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getNewsTypeId() {
+		return newsTypeId;
+	}
+	public void setNewsTypeId(Long newsTypeId) {
+		this.newsTypeId = newsTypeId;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public String getPic() {
+		return pic;
+	}
+	public void setPic(String pic) {
+		this.pic = pic;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+	public Long getStickNum() {
+		return stickNum;
+	}
+	public void setStickNum(Long stickNum) {
+		this.stickNum = stickNum;
+	}
+	public Long getSortNum() {
+		return sortNum;
+	}
+	public void setSortNum(Long sortNum) {
+		this.sortNum = sortNum;
+	}
+}

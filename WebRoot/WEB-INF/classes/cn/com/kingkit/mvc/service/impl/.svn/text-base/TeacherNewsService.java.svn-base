@@ -1,0 +1,69 @@
+package cn.com.kingkit.mvc.service.impl;
+
+import java.io.Serializable;
+import java.sql.SQLException;
+import java.util.List;
+
+import cn.com.kingkit.mvc.dao.BaseDao;
+import cn.com.kingkit.mvc.exception.BusinessException;
+import cn.com.kingkit.mvc.model.TeacherNews;
+import cn.com.kingkit.mvc.service.BaseService;
+
+public class TeacherNewsService extends BaseService<TeacherNews> implements
+		Serializable {
+	public void save(TeacherNews teachersNews) throws BusinessException, SQLException {
+		if (null != teachersNews.getId() && 0 != teachersNews.getId()) {
+			update(teachersNews);
+		} else {
+			teachersNews.setSortNum(Long.valueOf(BaseDao.getMaxNum("sortNum", "TeacherNews")+1));
+			add(teachersNews);
+		}
+	}
+
+	public void upWard(TeacherNews teachersNews){
+		TeacherNews a = get(teachersNews);
+		TeacherNews b = new TeacherNews();
+		int i = 0;
+		List<TeacherNews> list = list(new TeacherNews(), null, null,
+				"order by sortNum desc", true);
+		for (TeacherNews temp : list) {
+			i++;
+			if (a.getId() == temp.getId()) {
+				break;
+			}
+			b.setId(temp.getId());
+		}
+		if (i != 1) {
+			b = get(b);
+			Long c = a.getSortNum();
+			a.setSortNum(b.getSortNum());
+			b.setSortNum(c);
+			update(a);
+			update(b);
+		}
+	}
+
+	public void downWard(TeacherNews teachersNews)  {
+		TeacherNews a = get(teachersNews);
+		TeacherNews b = new TeacherNews();
+		int i = 0;
+		List<TeacherNews> list = list(new TeacherNews(), null, null,
+				"order by sortNum", true);
+		for (TeacherNews temp : list) {
+			i++;
+			if (a.getId() == temp.getId()) {
+				break;
+			}
+			b.setId(temp.getId());
+		}
+		if (i != 1) {
+			b = get(b);
+
+			Long c = a.getSortNum();
+			a.setSortNum(b.getSortNum());
+			b.setSortNum(c);
+			update(a);
+			update(b);
+		}
+	}
+}
